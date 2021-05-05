@@ -1,0 +1,4 @@
+/dist
+/src/sass/libs
+*.html
+*.min.css
