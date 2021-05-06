@@ -1,150 +1,134 @@
 .gallery {
-  padding: 20px 0 200px;
+    padding: 20px 0 200px;
 
-  &__title {
-    margin-bottom: 212px;
-  }
-  
-  &__filter-btn {
-    display: flex;
-    justify-content: left;
-    margin-bottom: 20px;
-  }
-  
-  &__filter-btn li:not(:last-child) {
-    margin-right: 20px;
-  }
-  
-  &__btn {
-    border: none;
-    padding: 0;
-    font-weight: 400;
-    font-size: 24px;
-    background-color: #FFF;
-    transition: all .2s;
-    cursor: pointer;
-    text-transform: uppercase;
-  }
+    &__title {
+        margin-bottom: 212px;
+    }
 
-  &__item {
-    position: relative;
-  }
-  
-  &__item-link {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(51, 51, 51, 0.7);
-    opacity: 0;
-    transition: all .8s;
-  }
-  
-  &__item:hover &__item-link {
-    opacity: 1;
-  }
-  
-  &__items {
-    margin-bottom: 50px;
-  }
-  
-  &__items-group {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-  
-  &__items-group:not(:last-child) {
-    margin-bottom: 40px;
-  }
-  
-  &__add-link {
-    display: block;
-    width: 350px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 23px 91px 24px;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 24px;
-    color: #242121;
-    border: 1px solid #C4C4C4;
-    margin-bottom: 200px;
-    transition: all .5s;
-  }
-  
-  &__add-link:hover {
-    background-color: #00B2A0;
-    color: #FFF;
-  }
+    &__filter-btn {
+        display: flex;
+        justify-content: left;
+        margin-bottom: 20px;
+    }
 
-  &__video {
-    margin-bottom: 200px;
-    position: relative;
-  }
-  
-  &__video-play {
-    position: absolute;
-    top: 42%;
-    right: 46%;
-  }
-  
-  &__numbers {
-    display: flex;
-    justify-content: center;
-  }
-  
-  &__number {
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 75px;
-    color: #01353E;
-    text-align: center;
-    margin-bottom: 5px;
-  }
-  
-  &__number:not(:last-child) {
-    margin-right: 100px;
-  }
-  
-  &__number span {
-    display: block;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 18px;
-    color: #242121;
-  }
+    &__filter-btn li:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    &__btn {
+        padding: 0;
+        border: none;
+        font-weight: 400;
+        font-size: 24px;
+        text-transform: uppercase;
+        background-color: #fff;
+        transition: all 0.2s;
+        cursor: pointer;
+    }
+
+    &__item-link {
+        position: relative;
+        display: block;
+        height: 280px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__item-link:hover::before {
+        background-color: rgba(51, 51, 51, 0);
+    }
+
+    &__items {
+        margin-bottom: 50px;
+    }
+
+    &__items-group {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &__items-group:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    &__add-link {
+        margin: 0 auto 190px;
+    }
+
+    &__video {
+        position: relative;
+        margin-bottom: 200px;
+    }
+
+    &__video-play {
+        position: absolute;
+        right: 46%;
+        top: 42%;
+    }
+
+    &__numbers {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__number {
+        margin-bottom: 5px;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 75px;
+        text-align: center;
+        color: #01353e;
+    }
+
+    &__number:not(:last-child) {
+        margin-right: 100px;
+    }
+
+    &__number span {
+        display: block;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        color: #242121;
+    }
 }
 
 .mixitup-control-active {
-  color: #00B2A0;
-  transition: all .2s;
+    color: #00b2a0;
+    transition: all 0.2s;
 }
 
 .blockquote {
+    margin-bottom: 200px;
+    background-color: #f8f8f8;
 
-  background-color: #F8F8F8;
-  margin-bottom: 200px;
+    &__text {
+        position: relative;
+        margin: 0 auto;
+        padding: 80px 0;
+        max-width: 575px;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 36px;
+        line-height: 40px;
+        color: #242121;
+    }
 
-  &__text {
-    padding: 80px 0;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 36px;
-    line-height: 40px;
-    color: #242121;
-    max-width: 575px;
-    margin: 0 auto;
-    position: relative;
-  }
-  
-  &__text:after {
-    content: "Нэт Янг, первый Чемпион Мира по сёрфингу";
-    position: absolute;
-    bottom: 50px;
-    right: -200px;
-    max-width: 280px;
-    font-size: 14px;
-    line-height: 18px;
-  }
+    &__text::after {
+        content: "Нэт Янг, первый Чемпион Мира по сёрфингу";
+        position: absolute;
+        right: -200px;
+        bottom: 50px;
+        max-width: 280px;
+        font-size: 14px;
+        line-height: 18px;
+    }
 }

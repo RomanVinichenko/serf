@@ -1,24 +1,24 @@
 .wawes {
-  padding: 200px 0 147px;
-  position: relative;
+    position: relative;
+    padding: 200px 0 147px;
 
-  &__background {
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right top;
-    top: 0;
-    right: 0;
-  }
-  
-  &__title {
-    text-align: left;
-  }
-  
-  &__text p {
-    margin-bottom: 30px;
-    max-width: 507px;
-  }
+    &__background {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        background-position: right top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__title {
+        text-align: left;
+    }
+
+    &__text p {
+        margin-bottom: 30px;
+        max-width: 507px;
+    }
 }

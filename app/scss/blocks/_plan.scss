@@ -1,57 +1,57 @@
 .plan {
-  padding: 200px 0 215px;
-  background-color: #F8F8F8;
-  
-  &__title {
-    margin-bottom: 185px;
-  }
-  
-  &__inner {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  &__items {
-    background-color: #fff;
-    padding: 45px 30px 25px;
-    width: 360px;
-    min-height: 575px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  &__items li {
-    font-weight: 400;
-    text-align: left;
-    margin-bottom: 20px;
-  }
-  
-  &__items &__item-type {
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 40px;
-    color: #01353E;
-    text-align: center;
-    letter-spacing: 0;
-    margin-bottom: 60px;
-  }
-  
-  &__items &__item-total {
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 40px;
-    color: #01353E;
-    text-align: center;
-    margin-top: auto;
-    position: relative;
-  }
-  
-  &__item-total span {
-    font-size: 18px;
-    line-height: 22px;
-    position: absolute;
-    top: 23%;
-    padding-left: 5px;
-  }
+    padding: 200px 0 215px;
+    background-color: #f8f8f8;
+
+    &__title {
+        margin-bottom: 185px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 45px 30px 25px;
+        width: 360px;
+        min-height: 575px;
+        background-color: #fff;
+    }
+
+    &__items li {
+        margin-bottom: 20px;
+        font-weight: 400;
+        text-align: left;
+    }
+
+    &__item-total span {
+        position: absolute;
+        top: 23%;
+        padding-left: 5px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    &__items &__item-type {
+        margin-bottom: 60px;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: 0;
+        text-align: center;
+        color: #01353e;
+    }
+
+    &__items &__item-total {
+        position: relative;
+        margin-top: auto;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 40px;
+        text-align: center;
+        color: #01353e;
+    }
 }
