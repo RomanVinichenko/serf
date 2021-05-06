@@ -1,0 +1,14 @@
+.about {
+  &__wrapper {
+  padding: 190px 0 200px;
+  }
+  &__text {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__text p {
+    max-width: 480px;
+    margin-bottom: 30px;
+    margin-right: auto;
+  }
+}
