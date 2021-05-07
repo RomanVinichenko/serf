@@ -2,7 +2,7 @@
   padding: 200px 0;
 
   &__title {
-    margin-bottom: 212px;
+    margin-bottom: 210px;
   }
 
   &__filter-btn {
@@ -122,11 +122,11 @@
       line-height: 40px;
     }
 
-    cite {
+    &__cite {
       display: block;
       max-width: 300px;
-      margin-left: auto;
-      margin-right: 150px;
+      margin: 0 auto;
+      transform: translateX(115%);
       padding-bottom: 60px;
     }
   }

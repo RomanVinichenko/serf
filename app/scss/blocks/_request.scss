@@ -1,100 +1,99 @@
 .request {
-    padding: 20px 0 200px;
+  padding: 20px 0 200px;
 
-    &__title {
-        margin-bottom: 243px;
-    }
+  &__title {
+    margin-bottom: 243px;
+  }
 
-    &__inner {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 200px;
-    }
-
-    &__connection {
-        display: flex;
-        flex-direction: column;
-        padding: 50px 52px 70px;
-        width: 600px;
-        background-color: #f8f8f8;
-    }
-
-    &__connection p {
-        max-width: 350px;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 30px;
-    }
-
-    &__connection p:not(:last-child) {
-        margin-bottom: 65px;
-    }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+  }
 }
 
 .form {
-    width: 570px;
+  width: 100%;
+  max-width: 570px;
 
-    input,
-    textarea {
-        display: block;
-        margin-bottom: 32px;
-        padding: 15px 5px;
-        width: 100%;
-        border: none;
-        border-bottom: 2px solid #dadada;
-        font-weight: 400;
-        font-size: 18px;
-        letter-spacing: inherit;
+  input,
+  textarea {
+    display: block;
+    margin-bottom: 32px;
+    padding: 15px 5px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #dadada;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: inherit;
+    &:focus {
+      outline: 1px solid #00b2a0;
     }
+  }
 
-    textarea {
-        min-height: 156px;
-        resize: none;
-    }
+  textarea {
+    min-height: 156px;
+    resize: none;
+  }
 
-    input::placeholder,
-    textarea::placeholder {
-        max-width: 260px;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 18px;
-        color: #00b2a0;
-    }
+  input::placeholder,
+  textarea::placeholder {
+    max-width: 260px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    color: #00b2a0;
+  }
 
-    &__btn {
-        display: inline-block;
-        margin-top: 40px;
-    }
+  &__btn {
+    display: inline-block;
+    margin-top: 40px;
+  }
 }
 
 .phone {
-    display: block;
-    text-decoration: underline;
-    color: #242121;
+  display: block;
+  text-decoration: underline;
+  color: #242121;
 }
 
 .social {
-    text-align: center;
+  text-align: center;
 
-    &__items {
-        display: flex;
-        justify-content: center;
-    }
+  display: flex;
+  justify-content: center;
 
-    &__items li + li {
-        margin-left: 10px;
-    }
+  li+li {
+    margin-left: 10px;
+  }
 
-    &__item-link {
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 18px;
-        text-transform: uppercase;
-        color: #242121;
-        transition: all 0.3s;
-    }
+  &__item-link {
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #242121;
+    transition: all 0.3s;
+  }
 
-    &__item-link:hover {
-        color: #00b2a0;
-    }
+  &__item-link:hover {
+    color: #00b2a0;
+  }
+}
+
+.connection {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 52px 70px;
+  width: 600px;
+  background-color: #f8f8f8;
+  font-style: normal;
+
+  .request__info {
+    margin-bottom: 65px;
+    max-width: 350px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.25;
+  }
 }

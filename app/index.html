@@ -296,7 +296,7 @@
         <p class="blockquote__text">
           «Если сомневаешься – иди катайся.»
         </p>
-        <cite>Нэт Янг, первый Чемпион Мира по сёрфингу</cite>
+        <cite class="blockquote__cite">Нэт Янг, первый Чемпион Мира по сёрфингу</cite>
       </blockquote>
 
       <div class="container">
@@ -516,45 +516,61 @@
         </h2>
         <div class="request__inner">
           <form class="form">
-            <input type="text" placeholder="Имя">
-            <input type="text" placeholder="Телефон">
-            <textarea placeholder="Оставьте сообщение, и мы свяжемся с Вами в ближайшее время"></textarea>
+            <label class="sr-only" for="name__input">
+              Введите ваше имя
+            </label>
+            <input class="form__input" id="name__input" type="text" name="feedback[name]" placeholder="Имя">
+            <label class="sr-only" for="tel__input">
+              Введите ваш телефон
+            </label>
+            <input class="form__input" id="tel__input" type="tel" name="feedback[phone]" placeholder="Телефон">
+            <label class="sr-only" for="textarea__input">
+              Введите ваше сообщение
+            </label>
+            <textarea class="form__textarea" id="textarea__input" type="text" name="feedback[message]"
+              placeholder="Оставьте сообщение, и мы свяжемся с Вами в ближайшее время"></textarea>
             <button class="form__btn btn" type="submit">Отправить</button>
           </form>
-          <div class="request__connection">
-            <p>Есть вопрос?
-              Вы можете связаться с нами:
-            </p>
-            <p>WhatsApp, Viber, Telegram
-              <a class="phone" href="tel:34674863788">+3 467 486-37-88</a>
-            </p>
-            <p>
-              <adress class="adress">Avenida grandes playas 79,
+
+          <address class="connection">
+            <div class="request__info">
+              <p>Есть вопрос?</p>
+              <p>Вы можете связаться с нами:</p>
+            </div>
+            <div class="request__info">
+              <p>WhatsApp, Viber, Telegram
+                <a class="phone" href="tel:34674863788">+3 467 486-37-88</a>
+              </p>
+            </div>
+            <div class="request__info">
+              <p>Avenida grandes playas 79,
                 Corralejo la Oliva Fuerteventura,
-                Spain. 35660</adress>
-            </p>
-          </div>
+                Spain. 35660
+              </p>
+            </div>
+          </address>
+
         </div>
-        <div class="social">
-          <ul class="social__items">
-            <li class="social__item">
-              <a class="social__item-link" href="#">
-                Instagram
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__item-link" href="#">
-                Facebook
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__item-link" href="#">
-                Youtube
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__item-link" href="#">
+              Instagram
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__item-link" href="#">
+              Facebook
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__item-link" href="#">
+              Youtube
+            </a>
+          </li>
+        </ul>
+
     </section>
   </main>
   <footer class="footer">
