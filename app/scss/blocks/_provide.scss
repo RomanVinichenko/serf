@@ -1,85 +1,88 @@
 .provide {
-    padding: 200px 0 170px;
-    background-color: #f8f8f8;
+  padding: 200px 0 170px;
+  background-color: #f8f8f8;
 
-    &__items {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 100px;
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+
+  &__item {
+    min-height: 137px;
+    max-width: 345px;
+
+    &-title {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin: 0 auto 15px;
+      padding-left: 65px;
+      min-height: 56px;
+      max-width: 220px;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px;
+      text-transform: uppercase;
+    }
+  }
+
+
+  &__item-title--sun::before {
+    background-image: url("../images/provide-sun.svg");
+  }
+
+  &__item-title--fly::before {
+    background-image: url("../images/provide-fly.svg");
+  }
+
+  &__item-title--serf::before {
+    background-image: url("../images/provide-serf.svg");
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info-list {
+    padding-top: 10px;
+  }
+
+  &__info-item {
+    position: relative;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  &__info-item {
+    img {
+      margin-bottom: 5px;
+      padding-right: 55px;
     }
 
-    &__item {
-        min-height: 137px;
-        max-width: 345px;
+    span {
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-weight: 400;
+      font-size: 24px;
     }
+  }
 
-    &__item-title {
-        position: relative;
-        display: flex;
-        align-items: center;
-        margin: 0 auto 15px;
-        padding-left: 65px;
-        min-height: 56px;
-        max-width: 220px;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 28px;
-        text-transform: uppercase;
-    }
+  &__text p {
+    margin-bottom: 30px;
+    max-width: 600px;
+  }
 
-    &__item-title--sun::before {
-        background-image: url("../images/provide-sun.svg");
-    }
-
-    &__item-title--fly::before {
-        background-image: url("../images/provide-fly.svg");
-    }
-
-    &__item-title--serf::before {
-        background-image: url("../images/provide-serf.svg");
-    }
-
-    &__inner {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    &__info-list {
-        padding-top: 10px;
-    }
-
-    &__info-item {
-        position: relative;
-        margin-bottom: 15px;
-        width: 100%;
-    }
-
-    &__info-item img {
-        margin-bottom: 5px;
-        padding-right: 55px;
-    }
-
-    &__info-item span {
-        position: absolute;
-        right: 0;
-        top: 0;
-        font-weight: 400;
-        font-size: 24px;
-    }
-
-    &__text p {
-        margin-bottom: 30px;
-        max-width: 600px;
-    }
-
-    &__item-title--sun::before,
-    &__item-title--fly::before,
-    &__item-title--serf::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 50px;
-        height: 50px;
-    }
+  &__item-title--sun::before,
+  &__item-title--fly::before,
+  &__item-title--serf::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+  }
 }

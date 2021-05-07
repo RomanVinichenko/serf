@@ -1,0 +1,40 @@
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding-top: 35px;
+}
+
+.menu {
+  display: flex;
+
+  &__btn {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding-right: 60px;
+
+    &-item+&-item {
+      margin-left: 40px;
+    }
+
+    &-link {
+      padding: 0 5px 7px;
+      border-bottom: 1px solid transparent;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px;
+      color: #fff;
+      transition: border-bottom 0.5s;
+
+      &:hover {
+        border-bottom: 1px solid #00b2a0;
+      }
+    }
+  }
+}

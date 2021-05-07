@@ -253,43 +253,40 @@
             </button>
           </li>
         </ul>
-        
-        <div class="gallery__items">
-          <div class="gallery__items-group">
-            <div class="gallery__item mix category-3">
-              <a class="gallery__item-link" data-fancybox="images" href="images/gallery/1.jpg">
-                <img src="images/gallery/1.jpg" alt="Картинка из галереи">
-              </a>
-            </div>
-            <div class="gallery__item mix category-1">
-              <a class="gallery__item-link" data-fancybox="images" href="images/gallery/2.jpg">
-                <img src="images/gallery/2.jpg" alt="Картинка из галереи">
-              </a>
-            </div>
-            <div class="gallery__item mix category-3">
-              <a class="gallery__item-link" data-fancybox="images" href="images/gallery/3.jpg">
-                <img src="images/gallery/3.jpg" alt="Картинка из галереи">
-              </a>
-            </div>
-          </div>
-          <div class="gallery__items-group">
-            <div class="gallery__item mix category-1">
-              <a class="gallery__item-link" data-fancybox="images" href="images/gallery/4.jpg">
-                <img src="images/gallery/4.jpg" alt="Картинка из галереи">
-              </a>
-            </div>
-            <div class="gallery__item mix category-2">
-              <a class="gallery__item-link" data-fancybox="images" href="images/gallery/5.jpg">
-                <img src="images/gallery/5.jpg" alt="Картинка из галереи">
-              </a>
-            </div>
-            <div class="gallery__item mix category-2">
-              <a class="gallery__item-link" data-fancybox="images" href="images/gallery/6.jpg">
-                <img src="images/gallery/6.jpg" alt="Картинка из галереи">
-              </a>
-            </div>
-          </div>
-        </div>
+
+        <ul class="gallery__items">
+          <li class="gallery__item mix category-3">
+            <a class="gallery__item-link" data-fancybox="images" href="images/gallery/1.jpg">
+              <img src="images/gallery/1.jpg" alt="Картинка из галереи">
+            </a>
+          </li>
+          <li class="gallery__item mix category-1">
+            <a class="gallery__item-link" data-fancybox="images" href="images/gallery/2.jpg">
+              <img class="gallery__item-pic" src=" images/gallery/2.jpg" alt="Картинка из галереи">
+            </a>
+          </li>
+          <li class="gallery__item mix category-3">
+            <a class="gallery__item-link" data-fancybox="images" href="images/gallery/3.jpg">
+              <img class="gallery__item-pic" src="images/gallery/3.jpg" alt="Картинка из галереи">
+            </a>
+          </li>
+          <li class="gallery__item mix category-1">
+            <a class="gallery__item-link" data-fancybox="images" href="images/gallery/4.jpg">
+              <img class="gallery__item-pic" src="images/gallery/4.jpg" alt="Картинка из галереи">
+            </a>
+          </li>
+          <li class="gallery__item mix category-2">
+            <a class="gallery__item-link" data-fancybox="images" href="images/gallery/5.jpg">
+              <img class="gallery__item-pic" src="images/gallery/5.jpg" alt="Картинка из галереи">
+            </a>
+          </li>
+          <li class="gallery__item mix category-2">
+            <a class="gallery__item-link" data-fancybox="images" href="images/gallery/6.jpg">
+              <img class="gallery__item-pic" src="images/gallery/6.jpg" alt="Картинка из галереи">
+            </a>
+          </li>
+        </ul>
+
         <button class="gallery__add-link btn" type="submit" href="#">
           Показать еще
         </button>
@@ -303,13 +300,15 @@
       </blockquote>
 
       <div class="container">
-        <div class="gallery__video">
+        <div class="gallery__video" style="background-image: url('images/gallery/video-bg.jpg');">
           <a class="gallery__video-link" data-fancybox href="https://www.youtube.com/watch?v=tNZ4gt5jMLI">
-            <img src="images/gallery/video-bg.jpg" style="background-image: url('images/gallery/video-bg.jpg');">
+            <img src="images/gallery/video-bg.jpg">
             <img class="gallery__video-play" src="images/gallery/icon-bg.svg" alt="Возпроизвести видео">
+            <span class="sr-only">Нажмите чтобы воспроизвести видео</span>
           </a>
         </div>
       </div>
+
       <div class="gallery__numbers">
         <h5 class="gallery__number">450
           <span>туристов</span>
@@ -332,86 +331,108 @@
         БЛОГ
       </h2>
       <ul class="blog__slider-items">
+
         <li class="blog__slider-item" style="background-image: url('images/blog-bg.jpg');">
           <div class="container">
             <a class="blog__slider-link" href="#">
-              <h3 class="blog__slider-title">Что необходимо взять с собой на серф тур</h3>
+              Что необходимо взять с собой на серф тур
             </a>
-            <p>ТОП 20 необходимых вещей для комфортного отдыха и обучения</p>
+            <div class="blog__slider-text">
+              <p>ТОП 20 необходимых вещей для комфортного отдыха и обучения</p>
+            </div>
           </div>
         </li>
         <li class="blog__slider-item" style="background-image: url('images/blog-bg.jpg');">
           <div class="container">
             <a class="blog__slider-link" href="#">
-              <h3 class="blog__slider-title">Что необходимо взять с собой на серф тур</h3>
+              Что необходимо взять с собой на серф тур
             </a>
-            <p>ТОП 20 необходимых вещей для комфортного отдыха и обучения</p>
+            <div class="blog__slider-text">
+              <p>ТОП 20 необходимых вещей для комфортного отдыха и обучения</p>
+            </div>
           </div>
         </li>
         <li class="blog__slider-item" style="background-image: url('images/blog-bg.jpg');">
           <div class="container">
             <a class="blog__slider-link" href="#">
-              <h3 class="blog__slider-title">Что необходимо взять с собой на серф тур</h3>
+              Что необходимо взять с собой на серф тур
             </a>
-            <p>ТОП 20 необходимых вещей для комфортного отдыха и обучения</p>
+            <div class="blog__slider-text">
+              <p>ТОП 20 необходимых вещей для комфортного отдыха и обучения</p>
+            </div>
           </div>
         </li>
         <li class="blog__slider-item" style="background-image: url('images/blog-bg.jpg');">
           <div class="container">
             <a class="blog__slider-link" href="#">
-              <h3 class="blog__slider-title">Что необходимо взять с собой на серф тур</h3>
+              Что необходимо взять с собой на серф тур
             </a>
-            <p>ТОП 20 необходимых вещей для комфортного отдыха и обучения</p>
+            <div class="blog__slider-text">
+              <p>ТОП 20 необходимых вещей для комфортного отдыха и обучения</p>
+            </div>
           </div>
         </li>
         <li class="blog__slider-item" style="background-image: url('images/blog-bg.jpg');">
           <div class="container">
             <a class="blog__slider-link" href="#">
-              <h3 class="blog__slider-title">Что необходимо взять с собой на серф тур</h3>
+              Что необходимо взять с собой на серф тур
             </a>
-            <p>ТОП 20 необходимых вещей для комфортного отдыха и обучения</p>
+            <div class="blog__slider-text">
+              <p>ТОП 20 необходимых вещей для комфортного отдыха и обучения</p>
+            </div>
           </div>
         </li>
         <li class="blog__slider-item" style="background-image: url('images/blog-bg.jpg');">
           <div class="container">
             <a class="blog__slider-link" href="#">
-              <h3 class="blog__slider-title">Что необходимо взять с собой на серф тур</h3>
+              Что необходимо взять с собой на серф тур
             </a>
-            <p>ТОП 20 необходимых вещей для комфортного отдыха и обучения</p>
+            <div class="blog__slider-text">
+              <p>ТОП 20 необходимых вещей для комфортного отдыха и обучения</p>
+            </div>
           </div>
         </li>
         <li class="blog__slider-item" style="background-image: url('images/blog-bg.jpg');">
           <div class="container">
             <a class="blog__slider-link" href="#">
-              <h3 class="blog__slider-title">Что необходимо взять с собой на серф тур</h3>
+              Что необходимо взять с собой на серф тур
             </a>
-            <p>ТОП 20 необходимых вещей для комфортного отдыха и обучения</p>
+            <div class="blog__slider-text">
+              <p>ТОП 20 необходимых вещей для комфортного отдыха и обучения</p>
+            </div>
           </div>
         </li>
         <li class="blog__slider-item" style="background-image: url('images/blog-bg.jpg');">
           <div class="container">
             <a class="blog__slider-link" href="#">
-              <h3 class="blog__slider-title">Что необходимо взять с собой на серф тур</h3>
+              Что необходимо взять с собой на серф тур
             </a>
-            <p>ТОП 20 необходимых вещей для комфортного отдыха и обучения</p>
+            <div class="blog__slider-text">
+              <p>ТОП 20 необходимых вещей для комфортного отдыха и обучения</p>
+            </div>
           </div>
         </li>
         <li class="blog__slider-item" style="background-image: url('images/blog-bg.jpg');">
           <div class="container">
             <a class="blog__slider-link" href="#">
-              <h3 class="blog__slider-title">Что необходимо взять с собой на серф тур</h3>
+              Что необходимо взять с собой на серф тур
             </a>
-            <p>ТОП 20 необходимых вещей для комфортного отдыха и обучения</p>
+            <div class="blog__slider-text">
+              <p>ТОП 20 необходимых вещей для комфортного отдыха и обучения</p>
+            </div>
           </div>
         </li>
         <li class="blog__slider-item" style="background-image: url('images/blog-bg.jpg');">
           <div class="container">
             <a class="blog__slider-link" href="#">
-              <h3 class="blog__slider-title">Что необходимо взять с собой на серф тур</h3>
+              Что необходимо взять с собой на серф тур
             </a>
-            <p>ТОП 20 необходимых вещей для комфортного отдыха и обучения</p>
+            <div class="blog__slider-text">
+              <p>ТОП 20 необходимых вещей для комфортного отдыха и обучения</p>
+            </div>
           </div>
         </li>
+
       </ul>
     </section>
 
@@ -423,18 +444,18 @@
         <ul class="group__items">
           <li class="group__item">
             <img src="images/group/group-pic1.jpg" alt="Фото нструктора">
-            <h5 class="group__name">Mike</h5>
-            <p class="group__position">Главный инстуктор</p>
+            <span class="group__name">Mike</span>
+            <span class="group__position">Главный инстуктор</span>
           </li>
           <li class="group__item">
             <img src="images/group/group-pic2.jpg" alt="Фото нструктора">
-            <h5 class="group__name">Mary</h5>
-            <p class="group__position">инстуктор</p>
+            <span class="group__name">Mary</span>
+            <span class="group__position">инстуктор</span>
           </li>
           <li class="group__item">
             <img src="images/group/group-pic3.jpg" alt="Фото нструктора">
-            <h5 class="group__name">Ольга</h5>
-            <p class="group__position">инстуктор</p>
+            <span class="group__name">Ольга</span>
+            <span class="group__position">инстуктор</span>
           </li>
         </ul>
       </div>

@@ -17,7 +17,7 @@
         justify-content: space-between;
         padding: 45px 30px 25px;
         width: 360px;
-        min-height: 575px;
+       min-height: 575px;
         background-color: #fff;
     }
 
@@ -25,11 +25,14 @@
         margin-bottom: 20px;
         font-weight: 400;
         text-align: left;
+        &:last-child {
+          padding-top: 50px;
+        }
     }
 
     &__item-total span {
         position: absolute;
-        top: 23%;
+        bottom: 8%;
         padding-left: 5px;
         font-size: 18px;
         line-height: 22px;
