@@ -1,16 +1,16 @@
 .about {
-  &__wrapper {
-    padding: 190px 0 200px;
-  }
-
-  &__text {
-    display: flex;
-    flex-wrap: wrap;
-
-    p {
-      margin-right: auto;
-      margin-bottom: 30px;
-      max-width: 480px;
+    &__wrapper {
+        padding: 190px 0 200px;
     }
-  }
+
+    &__text {
+        display: flex;
+        flex-wrap: wrap;
+
+        p {
+            margin-right: auto;
+            margin-bottom: 30px;
+            max-width: 480px;
+        }
+    }
 }

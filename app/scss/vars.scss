@@ -4,4 +4,10 @@ $descr-color: #0d302c;
 $background-color: #f8f8f8;
 $turquoise-color: #00b2a0;
 $white-color: #fff;
-$black-color:#000;
+$black-color: #000;
+
+@mixin r($width) {
+  @media only screen and (max-width: $width+ "px"){
+    @content;
+  }
+}

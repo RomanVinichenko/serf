@@ -1,5 +1,24 @@
 $(function () {
 
+  $('.menu a, .footer a').on('click', function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+      top = $(id).offset().top;
+    $('body,html').animate({
+      scrollTop: top,
+    }, 1500);
+
+  });
+
+  $(window).scroll(function () {
+    
+    if ( $(this).scrollTop() > 200) {
+      $('.header').addClass('header--active');
+    } else {
+      $('.header').removeClass('header--active');
+    }
+  });
+
   $('.blog__slider-items').slick({
     dots: true,
     arrows: false,

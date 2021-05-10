@@ -1,13 +1,13 @@
 .map {
-  padding: 200px 225px;
+    padding: 200px 225px;
 
-  &__frame {
-    width: 100%;
-    min-height: 640px;
-    border: 0;
-  }
+    &__frame {
+        width: 100%;
+        min-height: 640px;
+        border: 0;
+    }
 
-  &__img {
-    margin: 0 auto;
-  }
+    &__img {
+        margin: 0 auto;
+    }
 }

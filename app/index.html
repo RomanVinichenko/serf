@@ -8,44 +8,45 @@
   <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
-<body>
+<body id="home">
   <header class="header">
     <div class="container">
       <nav class="menu">
-        <a class="logo" href="#">
-          <img src="images/logo.svg" alt="Логотип">
+        <a class="logo" href="#home">
+          <img class="logo__img" src="images/logo.svg" alt="Логотип">
         </a>
-        <button class="menu__btn">
+        <button class="menu__btn" type="button">
           <img src="images/menu-btn.svg" alt="Кнопка меню">
+          <span class="sr-only">Нажмите чтобы развернуть меню</span>
         </button>
         <ul class="menu__list">
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#">
+            <a class="menu__list-link" href="#about">
               О нас
             </a>
           </li>
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#">
+            <a class="menu__list-link" href="#provide">
               Услуги
             </a>
           </li>
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#">
+            <a class="menu__list-link" href="#plan">
               Стоимость
             </a>
           </li>
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#">
+            <a class="menu__list-link" href="#blog">
               Блог
             </a>
           </li>
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#">
+            <a class="menu__list-link" href="#group">
               Команда
             </a>
           </li>
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#">
+            <a class="menu__list-link" href="#request">
               Контакты
             </a>
           </li>
@@ -66,16 +67,15 @@
         </div>
         <a class="intro__icon" href="#">
           <svg width="20" height="69">
-            <path
-              d="M19.8372 43.7682C19.0787 29.7428 16.111 13.8178 11.4111 1.77122C11.7245 1.0447 11.245 -0.219081 10.6159 0.0326471C3.22778 2.98797 1.14916 23.5694 0.389332 33.3937C-0.448886 44.2302 -0.682241 64.7384 7.76561 68.3159C11.2466 69.7906 15.3789 67.8922 17.6002 63.2946C20.1916 57.9311 20.1853 50.2029 19.8372 43.7682ZM16.8406 34.0295C14.5593 33.4665 11.3791 34.5443 10.0267 34.8442C9.47931 34.9655 8.94625 35.1128 8.41274 35.2602C8.47568 25.0581 9.31389 14.7821 10.1589 4.68098C12.1544 10.8709 15.1717 22.5577 16.8406 34.0295ZM15.6045 37.7246C15.5332 37.9289 15.4698 38.1148 15.4184 38.2787C15.2539 38.0759 15.0928 37.8609 14.9272 37.6555C15.1521 37.6768 15.3782 37.6999 15.6045 37.7246ZM2.38206 34.4462C2.90126 25.9003 4.33662 11.0576 8.9826 4.42704C7.02032 14.0989 6.06077 25.0783 6.15325 35.9742C6.02691 36.0198 5.90353 36.0786 5.77765 36.126C5.55316 36.0113 5.30231 36.0183 5.061 36.2197C4.9458 36.3164 4.84173 36.4424 4.73016 36.549C3.88672 36.9058 3.0485 37.2898 2.21778 37.7341C2.26663 36.4957 2.32548 35.3782 2.38206 34.4462ZM8.91058 65.2316C4.22505 64.7436 2.642 56.5071 2.23096 48.2876C2.3423 48.3857 2.4625 48.45 2.58747 48.4761C2.61314 48.5371 2.66041 48.5687 2.71199 48.5151C2.72312 48.5037 2.73516 48.4948 2.74652 48.4831C2.96488 48.4654 3.18779 48.3254 3.38751 48.0009C3.43841 47.9179 3.48976 47.833 3.54089 47.7488C4.48681 46.9543 5.49567 46.3774 6.53225 45.9416C7.00306 52.6978 7.89581 59.2541 9.24323 65.2515C9.13189 65.2437 9.02441 65.2434 8.91058 65.2316ZM11.3019 65.121C11.2939 65.0765 11.2905 65.0346 11.28 64.9887C9.78061 58.521 8.97851 51.911 8.6236 45.2338C9.19687 45.0783 9.77061 44.9435 10.3389 44.8251C12.9726 44.2765 15.417 45.3073 17.9633 45.1423C18.4616 55.505 16.9651 63.8987 11.3019 65.121Z"
-              fill="white" />
+            <path fill="#ffffff"
+              d="M19.8372 43.7682C19.0787 29.7428 16.111 13.8178 11.4111 1.77122C11.7245 1.0447 11.245 -0.219081 10.6159 0.0326471C3.22778 2.98797 1.14916 23.5694 0.389332 33.3937C-0.448886 44.2302 -0.682241 64.7384 7.76561 68.3159C11.2466 69.7906 15.3789 67.8922 17.6002 63.2946C20.1916 57.9311 20.1853 50.2029 19.8372 43.7682ZM16.8406 34.0295C14.5593 33.4665 11.3791 34.5443 10.0267 34.8442C9.47931 34.9655 8.94625 35.1128 8.41274 35.2602C8.47568 25.0581 9.31389 14.7821 10.1589 4.68098C12.1544 10.8709 15.1717 22.5577 16.8406 34.0295ZM15.6045 37.7246C15.5332 37.9289 15.4698 38.1148 15.4184 38.2787C15.2539 38.0759 15.0928 37.8609 14.9272 37.6555C15.1521 37.6768 15.3782 37.6999 15.6045 37.7246ZM2.38206 34.4462C2.90126 25.9003 4.33662 11.0576 8.9826 4.42704C7.02032 14.0989 6.06077 25.0783 6.15325 35.9742C6.02691 36.0198 5.90353 36.0786 5.77765 36.126C5.55316 36.0113 5.30231 36.0183 5.061 36.2197C4.9458 36.3164 4.84173 36.4424 4.73016 36.549C3.88672 36.9058 3.0485 37.2898 2.21778 37.7341C2.26663 36.4957 2.32548 35.3782 2.38206 34.4462ZM8.91058 65.2316C4.22505 64.7436 2.642 56.5071 2.23096 48.2876C2.3423 48.3857 2.4625 48.45 2.58747 48.4761C2.61314 48.5371 2.66041 48.5687 2.71199 48.5151C2.72312 48.5037 2.73516 48.4948 2.74652 48.4831C2.96488 48.4654 3.18779 48.3254 3.38751 48.0009C3.43841 47.9179 3.48976 47.833 3.54089 47.7488C4.48681 46.9543 5.49567 46.3774 6.53225 45.9416C7.00306 52.6978 7.89581 59.2541 9.24323 65.2515C9.13189 65.2437 9.02441 65.2434 8.91058 65.2316ZM11.3019 65.121C11.2939 65.0765 11.2905 65.0346 11.28 64.9887C9.78061 58.521 8.97851 51.911 8.6236 45.2338C9.19687 45.0783 9.77061 44.9435 10.3389 44.8251C12.9726 44.2765 15.417 45.3073 17.9633 45.1423C18.4616 55.505 16.9651 63.8987 11.3019 65.121Z" />
           </svg>
           <span class="sr-only">Нажмите чтобы перейти к следующей секции</span>
         </a>
       </div>
     </section>
 
-    <secction class="about">
+    <section class="about" id="about">
       <div class="container">
         <div class="about__wrapper">
           <h2 class="title">О школе, о серфинге, о канарах
@@ -128,9 +128,9 @@
           </div>
         </div>
       </div>
-    </secction>
+    </section>
 
-    <section class="provide">
+    <section class="provide" id="provide">
       <div class="container">
         <h2 class="title">В школе вы получите</h2>
         <ul class="provide__items">
@@ -295,15 +295,14 @@
       <blockquote class="blockquote">
         <p class="blockquote__text">
           «Если сомневаешься – иди катайся.»
+          <cite class="blockquote__cite">Нэт Янг, первый Чемпион Мира по сёрфингу</cite>
         </p>
-        <cite class="blockquote__cite">Нэт Янг, первый Чемпион Мира по сёрфингу</cite>
       </blockquote>
 
       <div class="container">
         <div class="gallery__video" style="background-image: url('images/gallery/video-bg.jpg');">
           <a class="gallery__video-link" data-fancybox href="https://www.youtube.com/watch?v=tNZ4gt5jMLI">
-            <img src="images/gallery/video-bg.jpg">
-            <img class="gallery__video-play" src="images/gallery/icon-bg.svg" alt="Возпроизвести видео">
+
             <span class="sr-only">Нажмите чтобы воспроизвести видео</span>
           </a>
         </div>
@@ -326,7 +325,7 @@
       </div>
     </section>
 
-    <section class="blog">
+    <section class="blog" id="blog">
       <h2 class="title blog__title">
         БЛОГ
       </h2>
@@ -436,7 +435,7 @@
       </ul>
     </section>
 
-    <section class="group">
+    <section class="group" id="group">
       <div class="container">
         <h2 class="title group__title">
           Наша команда
@@ -461,7 +460,7 @@
       </div>
     </section>
 
-    <section class="plan">
+    <section class="plan" id="plan">
       <div class="container">
         <h2 class="title plan__title">Пакеты услуг</h2>
         <div class="plan__inner">
@@ -508,7 +507,7 @@
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1782974.2638141636!2d-13.670459151530196!3d29.212622111635717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4634e503b2ee11%3A0x47dc5e1662e1a4c2!2zQXYuIENvcnJhbGVqbyBHcmFuZGVzIFBsYXlhcywgNzksIDM1NjYwIENvcnJhbGVqbywgTGFzIFBhbG1hcywg0JjRgdC_0LDQvdC40Y8!5e0!3m2!1sru!2sua!4v1620076987590!5m2!1sru!2sua"></iframe>
     </section>
 
-    <section class="request">
+    <section class="request" id="request">
       <div class="container">
 
         <h2 class="title request__title">
@@ -574,8 +573,8 @@
     </section>
   </main>
   <footer class="footer">
-    <a class="footer__logo" href="#">
-      <img src="images/logo.svg" alt="Логотип футера">
+    <a class="logo" href="#home">
+      <img class="logo__img" src="images/logo.svg" alt="Логотип футера">
     </a>
   </footer>
 

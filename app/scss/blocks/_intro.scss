@@ -1,8 +1,8 @@
 .intro {
   &__inner {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     min-height: 100vh;
   }
 
@@ -27,18 +27,20 @@
     }
   }
 
-
-  &__icon svg {
+  &__icon {
     position: absolute;
     left: 50%;
     bottom: 92px;
     width: 20px;
     height: 69px;
     transform: translateX(-50%);
-    transition: all 0.5s;
 
-    svg:hover {
-      fill: #0d302c;
+    path {
+      transition: all 0.2s;
+    }
+
+    path:hover {
+      fill: #00B2A0;
     }
   }
 }

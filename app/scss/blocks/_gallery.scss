@@ -15,8 +15,8 @@
   }
 
   &__btn {
-    border: none;
     padding: 0;
+    border: none;
     font-weight: 400;
     font-size: 24px;
     text-transform: uppercase;
@@ -27,10 +27,7 @@
       outline: 1px solid #00b2a0;
     }
 
-    &:hover {
-      color: #00b2a0;
-    }
-
+    &:hover,
     &.mixitup-control-active {
       color: #00b2a0;
     }
@@ -43,19 +40,19 @@
   }
 
   &__item {
-    margin: 0 20px 40px;
     position: relative;
+    margin: 0 20px 40px;
   }
 
   &__item-link {
     &::before {
       content: "";
       position: absolute;
+      opacity: 0;
       width: 100%;
       height: 100%;
       background-color: rgba(51, 51, 51, 0.7);
-      opacity: 0;
-      transition: all .3s;
+      transition: all 0.3s;
     }
 
     &:hover {
@@ -72,33 +69,71 @@
   &__video {
     position: relative;
     margin-bottom: 200px;
-  }
+    height: 600px;
+    max-width: 1200px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
-  &__video-play {
-    position: absolute;
-    right: 46%;
-    top: 42%;
+    &-link {
+      display: block;
+      width: 100%;
+      height: 100%;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 100px;
+        height: 100px;
+        background-image: url("../images/gallery/icon-bg.svg");
+        background-repeat: no-repeat;
+        transform: translate(-50px, -50px);
+        transition: all 0.5s;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(51, 51, 51, 0.5);
+        transition: all 0.5s;
+      }
+
+      &:hover {
+        &::before {
+          z-index: 2;
+          background-image: url("../images/gallery/icon-bgwh.svg");
+        }
+
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
   }
 
   &__numbers {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 0 auto 200px;
+    max-width: 800px;
   }
 
   &__number {
     margin-bottom: 5px;
+    width: 100%;
+    max-width: 150px;
     font-weight: 700;
     font-size: 64px;
     line-height: 75px;
     text-align: center;
     color: #01353e;
-  }
 
-  &__number:not(:last-child) {
-    margin-right: 100px;
-  }
-
-  &__number {
     span {
       display: block;
       font-weight: 300;
@@ -108,15 +143,15 @@
     }
   }
 
-
   .blockquote {
     margin-bottom: 200px;
+    padding: 80px 0 60px;
     background-color: #f8f8f8;
 
     &__text {
       margin: 0 auto;
-      padding-top: 80px;
-      max-width: 575px;
+      max-width: 880px;
+      text-align: center;
       font-style: italic;
       font-size: 36px;
       line-height: 40px;
@@ -124,10 +159,9 @@
 
     &__cite {
       display: block;
-      max-width: 300px;
-      margin: 0 auto;
-      transform: translateX(115%);
-      padding-bottom: 60px;
+      text-align: right;
+      font-size: 14px;
+      line-height: 18px;
     }
   }
 }
