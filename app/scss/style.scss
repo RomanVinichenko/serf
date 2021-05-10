@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css");
-@import "vars";
-@import "global";
+@import "_vars";
+@import "_global";
 @import "blocks/_header";
 @import "blocks/_intro";
 @import "blocks/_about";
@@ -16,4 +16,4 @@
 @import "blocks/_map";
 @import "blocks/_request";
 @import "blocks/_footer";
-@import "blocks/_media";
+@import "_media";

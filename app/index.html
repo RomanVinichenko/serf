@@ -225,7 +225,7 @@
       <div class="wawes__background" style="background-image: url('images/wawes-serf.jpg');">
       </div>
     </section>
-
+<!--
     <section class="gallery">
       <div class="container">
         <h2 class="title gallery__title">
@@ -286,8 +286,7 @@
             </a>
           </li>
         </ul>
-
-        <button class="gallery__add-link btn" type="submit" href="#">
+        <button class="gallery__add-link btn" type="submit">
           Показать еще
         </button>
       </div>
@@ -302,7 +301,6 @@
       <div class="container">
         <div class="gallery__video" style="background-image: url('images/gallery/video-bg.jpg');">
           <a class="gallery__video-link" data-fancybox href="https://www.youtube.com/watch?v=tNZ4gt5jMLI">
-
             <span class="sr-only">Нажмите чтобы воспроизвести видео</span>
           </a>
         </div>
@@ -321,7 +319,6 @@
         <h5 class="gallery__number">365
           <span>дней в году</span>
         </h5>
-      </div>
       </div>
     </section>
 
@@ -431,7 +428,6 @@
             </div>
           </div>
         </li>
-
       </ul>
     </section>
 
@@ -503,13 +499,13 @@
     </section>
 
     <section class="map">
+      <h2 class="sr-only">Карта</h2>
       <iframe class="map__frame"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1782974.2638141636!2d-13.670459151530196!3d29.212622111635717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4634e503b2ee11%3A0x47dc5e1662e1a4c2!2zQXYuIENvcnJhbGVqbyBHcmFuZGVzIFBsYXlhcywgNzksIDM1NjYwIENvcnJhbGVqbywgTGFzIFBhbG1hcywg0JjRgdC_0LDQvdC40Y8!5e0!3m2!1sru!2sua!4v1620076987590!5m2!1sru!2sua"></iframe>
     </section>
 
     <section class="request" id="request">
       <div class="container">
-
         <h2 class="title request__title">
           Оставить заявку
         </h2>
@@ -522,11 +518,11 @@
             <label class="sr-only" for="tel__input">
               Введите ваш телефон
             </label>
-            <input class="form__input" id="tel__input" type="tel" name="feedback[phone]" placeholder="Телефон">
+            <input class="form__input" id="tel__input" type="number" name="feedback[phone]" placeholder="Телефон">
             <label class="sr-only" for="textarea__input">
               Введите ваше сообщение
             </label>
-            <textarea class="form__textarea" id="textarea__input" type="text" name="feedback[message]"
+            <textarea class="form__textarea" id="textarea__input" name="feedback[message]"
               placeholder="Оставьте сообщение, и мы свяжемся с Вами в ближайшее время"></textarea>
             <button class="form__btn btn" type="submit">Отправить</button>
           </form>
@@ -548,10 +544,7 @@
               </p>
             </div>
           </address>
-
         </div>
-
-
         <ul class="social">
           <li class="social__item">
             <a class="social__item-link" href="#">
@@ -569,14 +562,15 @@
             </a>
           </li>
         </ul>
-
+      </div>
     </section>
   </main>
+
   <footer class="footer">
     <a class="logo" href="#home">
       <img class="logo__img" src="images/logo.svg" alt="Логотип футера">
     </a>
-  </footer>
+  </footer> -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>

@@ -11,8 +11,8 @@ $(function () {
   });
 
   $(window).scroll(function () {
-    
-    if ( $(this).scrollTop() > 200) {
+
+    if ($(this).scrollTop() > 150) {
       $('.header').addClass('header--active');
     } else {
       $('.header').removeClass('header--active');

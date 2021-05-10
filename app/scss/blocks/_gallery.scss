@@ -128,10 +128,10 @@
     margin-bottom: 5px;
     width: 100%;
     max-width: 150px;
-    font-weight: 700;
     font-size: 64px;
-    line-height: 75px;
+    line-height: 1.17;
     text-align: center;
+    text-transform: uppercase;
     color: #01353e;
 
     span {
@@ -151,17 +151,17 @@
     &__text {
       margin: 0 auto;
       max-width: 880px;
-      text-align: center;
       font-style: italic;
       font-size: 36px;
       line-height: 40px;
+      text-align: center;
     }
 
     &__cite {
       display: block;
-      text-align: right;
       font-size: 14px;
       line-height: 18px;
+      text-align: right;
     }
   }
 }

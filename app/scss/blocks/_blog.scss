@@ -1,92 +1,93 @@
 .blog {
-    padding: 20px 0 200px;
+  padding: 20px 0 200px;
 
-    &__title {
-        margin-bottom: 230px;
-    }
+  &__title {
+    margin-bottom: 230px;
+  }
 
-    &__slider {
-        &-item {
-            position: relative;
-            z-index: 1;
-            height: 68vh;
-            background-position: center center;
-            background-size: cover;
-            background-repeat: no-repeat;
+  &__slider {
+    &-item {
+      position: relative;
+      z-index: 1;
+      height: 68vh;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
 
-            &::after {
-                content: "";
-                position: absolute;
-                left: 0;
-                right: 0;
-                top: 0;
-                bottom: 0;
-                z-index: -1;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(51, 51, 51, 0.5);
-            }
-        }
-
-        &-link {
-            display: block;
-            font-weight: 400;
-            font-size: 48px;
-            line-height: 1.2;
-            text-transform: uppercase;
-            color: #fff;
-            transition: all 0.3s;
-
-            &:hover {
-                text-decoration: underline;
-                color: #00b2a0;
-            }
-        }
-
-        &-text {
-            color: #fff;
-        }
-
-        &-link,
-        &-text {
-            margin-left: auto;
-            max-width: 600px;
-        }
-    }
-
-    .slick-dots {
+      &::after {
+        content: "";
         position: absolute;
-        left: 50%;
-        bottom: 77px;
-        display: flex;
-        color: #00b2a0;
-        transform: translateX(-50%);
-    
-        button {
-            padding: 0;
-            width: 15px;
-            height: 15px;
-            border: none;
-            border-radius: 50%;
-            font-size: 0;
-            background-color: #fff;
-            transition: all 0.3s;
-        }
-    
-        li {
-            &:not(:last-child) {
-                margin-right: 15px;
-            }
-    
-            button {
-                &:hover {
-                    background-color: #00b2a0;
-                }
-            }
-    
-            &.slick-active button {
-                background-color: #00b2a0;
-            }
-        }
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(51, 51, 51, 0.5);
+      }
     }
+
+    &-link {
+      display: flex;
+      justify-content: flex-end;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 1.2;
+      text-transform: uppercase;
+      color: #fff;
+      transition: all 0.3s;
+
+      &:hover {
+        text-decoration: underline;
+        color: #00b2a0;
+      }
+    }
+
+    &-text {
+      color: #fff;
+    }
+
+    &-link,
+    &-text {
+      margin-left: auto;
+      max-width: 600px;
+    }
+  }
+
+  .slick-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 77px;
+    display: flex;
+    color: #00b2a0;
+    transform: translateX(-50%);
+
+    button {
+      padding: 0;
+      width: 15px;
+      height: 15px;
+      border: none;
+      border-radius: 50%;
+      font-size: 0;
+      background-color: #fff;
+      transition: all 0.3s;
+    }
+
+    li {
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+
+      button {
+        &:hover {
+          background-color: #00b2a0;
+        }
+      }
+
+      &.slick-active button {
+        background-color: #00b2a0;
+      }
+    }
+  }
 }

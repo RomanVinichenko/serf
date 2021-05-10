@@ -1,0 +1,292 @@
+$xl: 1220px;
+$lg: 992px;
+$md: 768px;
+$sm: 567px;
+$fz-2xl: 36px;
+$fz-xl: 30px;
+$fz-lg: 24px;
+$fz-md: 18px;
+$fz-bs: 16px;
+$fz-sm: 14px;
+
+@media (max-width: $xl) {
+
+  .about,
+  .provide,
+  .wawes {
+    padding: 70px 0;
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .title {
+    margin-bottom: 80px;
+    font-size: $fz-2xl;
+    line-height: 1.2;
+  }
+
+  .about {
+    &__text {
+      p {
+        margin: 0 auto 30px;
+        width: 100%;
+        max-width: 430px;
+      }
+    }
+  }
+
+  .wawes {
+    &__text {
+      p {
+        padding-left: 20px;
+        width: 100%;
+        max-width: 450px;
+      }
+    }
+
+    &__title {
+      padding-left: 20px;
+    }
+  }
+
+  .provide {
+    &__item {
+      margin: 0 10px 25px;
+    }
+
+    &__text {
+      p {
+        padding-left: 20px;
+      }
+    }
+
+    &__items {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
+    &__inner {
+      span {
+        top: -10px;
+      }
+    }
+  }
+}
+
+@media (max-width: $lg) {
+  .title {
+    margin-bottom: 65px;
+    font-size: $fz-xl;
+  }
+
+  .header {
+    .menu {
+      justify-content: space-between;
+
+      &__btn {
+        z-index: 2;
+        display: block;
+        padding: 0 10px 0 0;
+        border: none;
+        background-color: transparent;
+      }
+
+      &__list {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        display: block;
+        align-items: center;
+        padding: 100px 0 15px;
+        text-align: center;
+        background-color: #000;
+        transform: translateY(-200%);
+        transition: all 0.5s;
+
+        &-link {
+          display: block;
+          padding: 15px 0;
+        }
+
+        &-item:not(:first-child) {
+          margin-left: 0;
+        }
+      }
+
+      &__list--active {
+        transform: translateY(0);
+      }
+
+      .logo {
+        position: relative;
+        z-index: 2;
+      }
+    }
+  }
+
+  .main {
+    .intro__title {
+      padding-bottom: 100px;
+      font-size: $fz-md;
+      line-height: 1.2;
+
+      span {
+        font-size: 150px;
+        line-height: 1.2;
+      }
+    }
+
+    .intro__icon {
+      bottom: 70px;
+    }
+  }
+
+  .about {
+    &__text {
+      p {
+        margin: 0 auto 25px;
+        width: 100%;
+        max-width: 600px;
+      }
+    }
+  }
+
+  .provide {
+    &__text {
+      p {
+        max-width: 500px;
+      }
+    }
+  }
+
+  .wawes {
+    &__background {
+      display: none;
+    }
+
+    &__text {
+      p {
+        margin: 0 auto 25px;
+        padding-left: 0;
+        width: 100%;
+        max-width: 600px;
+      }
+    }
+
+    &__title {
+      padding-left: 0;
+      text-align: center;
+    }
+  }
+
+  .gallery {
+    .blockquote {
+      &__cite {
+        margin-top: 10px;
+        transform: translateX(0);
+      }
+
+      &__text {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .title {
+    margin: 0 auto 65px;
+    width: 100%;
+    max-width: 500px;
+    font-size: $fz-lg;
+  }
+
+  .provide {
+    &__item {
+      margin: 0 0 30px;
+      max-width: 100%;
+
+      &-text {
+        margin: 0 auto;
+        max-width: 350px;
+        text-align: left;
+      }
+
+      &-title {
+        justify-content: space-around;
+        font-size: 20px;
+      }
+    }
+
+    &__items {
+      display: block;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    &__inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    &__text {
+      p {
+        padding-left: 0;
+        width: 100%;
+        max-width: 600px;
+      }
+    }
+
+    &__info-list {
+      margin-bottom: 25px;
+    }
+  }
+
+  .gallery {
+    &__numbers {
+      flex-wrap: wrap;
+    }
+
+    &__number {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .title {
+    &::after {
+      display: none;
+    }
+  }
+
+  .main {
+    .intro__title {
+      padding-bottom: 80px;
+      font-size: $fz-sm;
+
+      span {
+        font-size: 90px;
+        line-height: 1.2;
+      }
+    }
+
+    .intro__icon {
+      bottom: 50px;
+    }
+  }
+
+  .gallery {
+    .blockquote {
+      &__text {
+        font-size: 28px;
+        line-height: 1.2;
+      }
+    }
+  }
+}

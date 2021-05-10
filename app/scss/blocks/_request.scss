@@ -14,8 +14,18 @@
             width: 100%;
             max-width: 570px;
 
-            input,
-            textarea {
+            &__textarea {
+                min-height: 156px;
+                resize: none;
+            }
+
+            &__btn {
+                display: inline-block;
+                margin-top: 40px;
+            }
+
+            &__input,
+            &__textarea {
                 display: block;
                 margin-bottom: 32px;
                 padding: 15px 5px;
@@ -31,23 +41,13 @@
                 }
             }
 
-            textarea {
-                min-height: 156px;
-                resize: none;
-            }
-
-            input::placeholder,
-            textarea::placeholder {
+            &__input::placeholder,
+            &__textarea::placeholder {
                 max-width: 260px;
                 font-weight: 400;
                 font-size: 18px;
                 line-height: 18px;
                 color: #00b2a0;
-            }
-
-            &__btn {
-                display: inline-block;
-                margin-top: 40px;
             }
         }
 
@@ -63,7 +63,6 @@
                 display: block;
                 text-decoration: underline;
                 color: #00b2a0;
-        
             }
 
             .request__info {
