@@ -13,12 +13,19 @@ $fz-sm: 14px;
 
   .about,
   .provide,
-  .wawes {
+  .wawes,
+  .gallery {
     padding: 70px 0;
 
     p {
       font-size: 16px;
     }
+  }
+
+  .btn {
+    margin: 0;
+    padding: 15px 50px;
+    font-size: 18px;
   }
 
   .title {
@@ -53,7 +60,7 @@ $fz-sm: 14px;
 
   .provide {
     &__item {
-      margin: 0 10px 25px;
+      margin: 0 10px 20px;
     }
 
     &__text {
@@ -72,6 +79,26 @@ $fz-sm: 14px;
       span {
         top: -10px;
       }
+    }
+  }
+
+  .gallery {
+    &__item {
+      &:nth-child(n+1) {
+        width: calc(100% / 3 - 40px);
+      }
+    }
+
+    &__add-link {
+      margin: 0 auto 40px;
+    }
+
+    .blockquote {
+      margin-bottom: 80px;
+    }
+
+    &__video {
+      margin-bottom: 80px;
     }
   }
 }
@@ -185,14 +212,22 @@ $fz-sm: 14px;
 
   .gallery {
     .blockquote {
+      margin-bottom: 80px;
+      padding: 50px 0;
+
       &__cite {
-        margin-top: 10px;
-        transform: translateX(0);
+        margin: 10px 10px 0 0;
       }
 
       &__text {
+        font-size: 30px;
+        line-height: 1.2;
         text-align: center;
       }
+    }
+
+    &__item {
+      height: 240px;
     }
   }
 }
@@ -203,21 +238,23 @@ $fz-sm: 14px;
     width: 100%;
     max-width: 500px;
     font-size: $fz-lg;
+
+    &::after {
+      font-size: 40px;
+    }
   }
 
   .provide {
     &__item {
-      margin: 0 0 30px;
-      max-width: 100%;
+      margin: 0 auto 30px;
+      width: 100%;
+      max-width: 600px;
 
       &-text {
-        margin: 0 auto;
-        max-width: 350px;
         text-align: left;
       }
 
       &-title {
-        justify-content: space-around;
         font-size: 20px;
       }
     }
@@ -244,6 +281,14 @@ $fz-sm: 14px;
 
     &__info-list {
       margin-bottom: 25px;
+      width: 100%;
+      max-width: 600px;
+    }
+
+    &__info-item {
+      img {
+        width: 100%;
+      }
     }
   }
 
@@ -253,7 +298,14 @@ $fz-sm: 14px;
     }
 
     &__number {
-      margin-right: 0;
+      width: 50%;
+      font-size: 55px;
+    }
+
+    &__item {
+      &:nth-child(n+1) {
+        width: calc(100% / 2 - 40px);
+      }
     }
   }
 }
@@ -284,9 +336,21 @@ $fz-sm: 14px;
   .gallery {
     .blockquote {
       &__text {
-        font-size: 28px;
+        font-size: 24px;
         line-height: 1.2;
       }
+
+      &__cite {
+        text-align: center;
+      }
+    }
+  }
+
+  .provide {
+    &__item-title {
+      justify-content: flex-start;
+      width: 100%;
+      max-width: 100%;
     }
   }
 }

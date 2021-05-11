@@ -1,31 +1,31 @@
 .group {
-    padding: 20px 0 180px;
+  padding: 20px 0 180px;
 
-    &__item {
-        max-width: 330px;
-    }
+  &__item {
+    max-width: 330px;
+  }
 
-    &__title {
-        margin-bottom: 200px;
-    }
+  &__title {
+    margin-bottom: 200px;
+  }
 
-    &__item img {
-        width: 100%;
-        height: 450px;
-        max-width: 330px;
-        object-fit: cover;
-    }
+  &__item img {
+    width: 100%;
+    height: 450px;
+    max-width: 330px;
+    object-fit: cover;
+  }
 
-    &__items {
-        display: flex;
-        justify-content: space-between;
-        text-align: center;
-    }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
 
-    &__name {
-        display: block;
-        padding: 25px 0 6px;
-        font-weight: 700;
-        font-size: 18px;
-    }
+  &__name {
+    display: block;
+    padding: 25px 0 6px;
+    font-weight: 700;
+    font-size: 18px;
+  }
 }
