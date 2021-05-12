@@ -16,7 +16,8 @@ $fz-sm: 14px;
   .gallery,
   .blog,
   .group,
-  .plan {
+  .plan,
+  .request {
     padding: 70px 0;
 
     p {
@@ -25,7 +26,6 @@ $fz-sm: 14px;
   }
 
   .btn {
-    margin: 0;
     padding: 15px 50px;
     font-size: 18px;
   }
@@ -104,9 +104,6 @@ $fz-sm: 14px;
     }
   }
 
-  .group {
-  }
-
   .plan {
     &__inner {
       flex-wrap: wrap;
@@ -115,8 +112,36 @@ $fz-sm: 14px;
 
     &__items {
       margin: 0 10px 20px;
-
     }
+  }
+
+  .map {
+    padding: 70px;
+
+    &__frame {
+      height: 500px;
+    }
+  }
+
+  .request {
+    &__inner {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-bottom: 70px;
+    }
+
+    .form {
+      max-width: 600px;
+
+      &__btn {
+        display: block;
+        margin: 0 auto 20px;
+      }
+    }
+  }
+
+  .footer {
+    padding: 25px 0;
   }
 }
 
@@ -249,13 +274,20 @@ $fz-sm: 14px;
   }
 
   .blog {
+    &__slider-link {
+      font-size: 40px;
+    }
+
     &__slider-link,
     &__slider-text {
       margin: 0 auto;
     }
+  }
 
-    &__slider-link {
-      font-size: 40px;
+  .plan {
+    &__item-type,
+    &__item-total {
+      font-size: 32px;
     }
   }
 }
@@ -360,19 +392,23 @@ $fz-sm: 14px;
 
   .plan {
     &__items {
-      margin: 0 10px 20px;
-      width: 100%;
-      min-height: 575px;
+      padding: 20px;
+      max-width: 300px;
+
+      li {
+        margin-bottom: 12px;
+      }
+    }
+
+    &__item-total {
+      span {
+        bottom: 5%;
+      }
     }
 
     &__item-type,
     &__item-total {
       font-size: 28px;
-    }
-    &__item-total {
-      span {
-        bottom: 5%;
-      }
     }
   }
 }
@@ -454,5 +490,40 @@ $fz-sm: 14px;
     &__item {
       margin: 0 auto 20px;
     }
+  }
+
+  .map {
+    padding: 70px 20px;
+  }
+
+  .request {
+    .social {
+      display: flex;
+      flex-direction: column;
+
+      li + li {
+        margin-left: 0;
+      }
+
+      &__item {
+        margin-bottom: 10px;
+      }
+
+      &__item-link {
+        font-size: $fz-md;
+      }
+    }
+
+    .connection {
+      padding: 30px;
+
+      .request__info {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  .footer {
+    padding: 15px 0;
   }
 }
