@@ -15,7 +15,8 @@ $fz-sm: 14px;
   .wawes,
   .gallery,
   .blog,
-  .group {
+  .group,
+  .plan {
     padding: 70px 0;
 
     p {
@@ -104,6 +105,18 @@ $fz-sm: 14px;
   }
 
   .group {
+  }
+
+  .plan {
+    &__inner {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    &__items {
+      margin: 0 10px 20px;
+
+    }
   }
 }
 
@@ -342,6 +355,24 @@ $fz-sm: 14px;
     &__item {
       margin-bottom: 20px;
       max-width: 300px;
+    }
+  }
+
+  .plan {
+    &__items {
+      margin: 0 10px 20px;
+      width: 100%;
+      min-height: 575px;
+    }
+
+    &__item-type,
+    &__item-total {
+      font-size: 28px;
+    }
+    &__item-total {
+      span {
+        bottom: 5%;
+      }
     }
   }
 }
