@@ -2,18 +2,19 @@
   padding: 20px 0 180px;
 
   &__item {
+    padding: 0 10px;
     max-width: 330px;
+
+    &-pic {
+      width: 100%;
+      max-width: 330px;
+      max-height: 450px;
+      object-fit: cover;
+    }
   }
 
   &__title {
     margin-bottom: 200px;
-  }
-
-  &__item img {
-    width: 100%;
-    height: 450px;
-    max-width: 330px;
-    object-fit: cover;
   }
 
   &__items {

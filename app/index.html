@@ -313,21 +313,21 @@
             <span class="sr-only">Нажмите чтобы воспроизвести видео</span>
           </a>
         </div>
-      </div>
+        <div class="gallery__numbers">
 
-      <div class="gallery__numbers">
-        <h5 class="gallery__number">450
-          <span>туристов</span>
-        </h5>
-        <h5 class="gallery__number">2500
-          <span>часов катания</span>
-        </h5>
-        <h5 class="gallery__number">10
-          <span>проф. тренеров</span>
-        </h5>
-        <h5 class="gallery__number">365
-          <span>дней в году</span>
-        </h5>
+          <h5 class="gallery__number">450
+            <span>туристов</span>
+          </h5>
+          <h5 class="gallery__number">2500
+            <span>часов катания</span>
+          </h5>
+          <h5 class="gallery__number">10
+            <span>проф. тренеров</span>
+          </h5>
+          <h5 class="gallery__number">365
+            <span>дней в году</span>
+          </h5>
+        </div>
       </div>
     </section>
 
@@ -447,17 +447,17 @@
         </h2>
         <ul class="group__items">
           <li class="group__item">
-            <img src="images/group/group-pic1.jpg" alt="Фото нструктора">
+            <img class="group__item-pic" src="images/group/group-pic1.jpg" alt="Фото нструктора">
             <span class="group__name">Mike</span>
             <span class="group__position">Главный инстуктор</span>
           </li>
           <li class="group__item">
-            <img src="images/group/group-pic2.jpg" alt="Фото нструктора">
+            <img class="group__item-pic" src="images/group/group-pic2.jpg" alt="Фото нструктора">
             <span class="group__name">Mary</span>
             <span class="group__position">инстуктор</span>
           </li>
           <li class="group__item">
-            <img src="images/group/group-pic3.jpg" alt="Фото нструктора">
+            <img class="group__item-pic" src="images/group/group-pic3.jpg" alt="Фото нструктора">
             <span class="group__name">Ольга</span>
             <span class="group__position">инстуктор</span>
           </li>
@@ -506,80 +506,81 @@
         </div>
       </div>
     </section>
+    <section class="plan">ewfwf</section>
 
-    <section class="map">
-      <h2 class="sr-only">Карта</h2>
-      <iframe class="map__frame"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1782974.2638141636!2d-13.670459151530196!3d29.212622111635717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4634e503b2ee11%3A0x47dc5e1662e1a4c2!2zQXYuIENvcnJhbGVqbyBHcmFuZGVzIFBsYXlhcywgNzksIDM1NjYwIENvcnJhbGVqbywgTGFzIFBhbG1hcywg0JjRgdC_0LDQvdC40Y8!5e0!3m2!1sru!2sua!4v1620076987590!5m2!1sru!2sua"></iframe>
-    </section>
+<!--    <section class="map">-->
+<!--      <h2 class="sr-only">Карта</h2>-->
+<!--      <iframe class="map__frame"-->
+<!--        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1782974.2638141636!2d-13.670459151530196!3d29.212622111635717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4634e503b2ee11%3A0x47dc5e1662e1a4c2!2zQXYuIENvcnJhbGVqbyBHcmFuZGVzIFBsYXlhcywgNzksIDM1NjYwIENvcnJhbGVqbywgTGFzIFBhbG1hcywg0JjRgdC_0LDQvdC40Y8!5e0!3m2!1sru!2sua!4v1620076987590!5m2!1sru!2sua"></iframe>-->
+<!--    </section>-->
 
-    <section class="request" id="request">
-      <div class="container">
-        <h2 class="title request__title">
-          Оставить заявку
-        </h2>
-        <div class="request__inner">
-          <form class="form">
-            <label class="sr-only" for="name__input">
-              Введите ваше имя
-            </label>
-            <input class="form__input" id="name__input" type="text" name="feedback[name]" placeholder="Имя">
-            <label class="sr-only" for="tel__input">
-              Введите ваш телефон
-            </label>
-            <input class="form__input" id="tel__input" type="number" name="feedback[phone]" placeholder="Телефон">
-            <label class="sr-only" for="textarea__input">
-              Введите ваше сообщение
-            </label>
-            <textarea class="form__textarea" id="textarea__input" name="feedback[message]"
-              placeholder="Оставьте сообщение, и мы свяжемся с Вами в ближайшее время"></textarea>
-            <button class="form__btn btn" type="submit">Отправить</button>
-          </form>
+<!--    <section class="request" id="request">-->
+<!--      <div class="container">-->
+<!--        <h2 class="title request__title">-->
+<!--          Оставить заявку-->
+<!--        </h2>-->
+<!--        <div class="request__inner">-->
+<!--          <form class="form">-->
+<!--            <label class="sr-only" for="name__input">-->
+<!--              Введите ваше имя-->
+<!--            </label>-->
+<!--            <input class="form__input" id="name__input" type="text" name="feedback[name]" placeholder="Имя">-->
+<!--            <label class="sr-only" for="tel__input">-->
+<!--              Введите ваш телефон-->
+<!--            </label>-->
+<!--            <input class="form__input" id="tel__input" type="number" name="feedback[phone]" placeholder="Телефон">-->
+<!--            <label class="sr-only" for="textarea__input">-->
+<!--              Введите ваше сообщение-->
+<!--            </label>-->
+<!--            <textarea class="form__textarea" id="textarea__input" name="feedback[message]"-->
+<!--              placeholder="Оставьте сообщение, и мы свяжемся с Вами в ближайшее время"></textarea>-->
+<!--            <button class="form__btn btn" type="submit">Отправить</button>-->
+<!--          </form>-->
 
-          <address class="connection">
-            <div class="request__info">
-              <p>Есть вопрос?</p>
-              <p>Вы можете связаться с нами:</p>
-            </div>
-            <div class="request__info">
-              <p>WhatsApp, Viber, Telegram
-                <a class="phone" href="tel:34674863788">+3 467 486-37-88</a>
-              </p>
-            </div>
-            <div class="request__info">
-              <p>Avenida grandes playas 79,
-                Corralejo la Oliva Fuerteventura,
-                Spain. 35660
-              </p>
-            </div>
-          </address>
-        </div>
-        <ul class="social">
-          <li class="social__item">
-            <a class="social__item-link" href="#">
-              Instagram
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__item-link" href="#">
-              Facebook
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__item-link" href="#">
-              Youtube
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
+<!--          <address class="connection">-->
+<!--            <div class="request__info">-->
+<!--              <p>Есть вопрос?</p>-->
+<!--              <p>Вы можете связаться с нами:</p>-->
+<!--            </div>-->
+<!--            <div class="request__info">-->
+<!--              <p>WhatsApp, Viber, Telegram-->
+<!--                <a class="phone" href="tel:34674863788">+3 467 486-37-88</a>-->
+<!--              </p>-->
+<!--            </div>-->
+<!--            <div class="request__info">-->
+<!--              <p>Avenida grandes playas 79,-->
+<!--                Corralejo la Oliva Fuerteventura,-->
+<!--                Spain. 35660-->
+<!--              </p>-->
+<!--            </div>-->
+<!--          </address>-->
+<!--        </div>-->
+<!--        <ul class="social">-->
+<!--          <li class="social__item">-->
+<!--            <a class="social__item-link" href="#">-->
+<!--              Instagram-->
+<!--            </a>-->
+<!--          </li>-->
+<!--          <li class="social__item">-->
+<!--            <a class="social__item-link" href="#">-->
+<!--              Facebook-->
+<!--            </a>-->
+<!--          </li>-->
+<!--          <li class="social__item">-->
+<!--            <a class="social__item-link" href="#">-->
+<!--              Youtube-->
+<!--            </a>-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--      </div>-->
+<!--    </section>-->
   </main>
 
-  <footer class="footer">
-    <a class="logo" href="#home">
-      <img class="logo__img" src="images/logo.svg" alt="Логотип футера">
-    </a>
-  </footer>
+<!--  <footer class="footer">-->
+<!--    <a class="logo" href="#home">-->
+<!--      <img class="logo__img" src="images/logo.svg" alt="Логотип футера">-->
+<!--    </a>-->
+<!--  </footer>-->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
