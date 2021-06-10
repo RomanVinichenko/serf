@@ -1,0 +1,26 @@
+.wawes {
+  position: relative;
+  padding: 200px 0 150px;
+
+  &__background {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 90%;
+    background-position: right top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__title {
+    text-align: left;
+  }
+
+  &__text {
+    p {
+      margin-bottom: 30px;
+      max-width: 507px;
+    }
+  }
+}
