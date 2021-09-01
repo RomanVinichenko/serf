@@ -1,4 +1,6 @@
 # Gulp template
+
+https://github.com/RomanVinichenko/portfolio/blob/dev/app/images/serf.jpg
 1. npm i
 2. gulp - for start gulp
 3. gulp build - production
